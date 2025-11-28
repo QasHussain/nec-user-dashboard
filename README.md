@@ -3,7 +3,7 @@
 A lightweight React + TypeScript dashboard for managing users.  
 You can **add new users**, validate input, and **view them in a user table** powered by global state via React Context.
 
-Built with: **React 18**, **TypeScript**, **Vite**, **Mantine**, **Ant Design**, **React Router**, **MobX**, and **Vitest**.
+Built with: **React 18**, **TypeScript**, **Vite**, **Mantine**, **Ant Design**, **React Router**, and **Vitest**.
 
 
 ## 🚀 Features
