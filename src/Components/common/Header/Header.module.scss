@@ -1,0 +1,26 @@
+@import "@styles/variables";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-clr;
+  color: whitesmoke;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid $primary-clr;
+}
+
+.logo {
+  margin-left: 1%;
+  margin-top: 1px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.account {
+  margin-right: 1%;
+  cursor: pointer;
+}

@@ -1,0 +1,379 @@
+@import "@styles/variables";
+
+.ant-input-affix-wrapper,
+.ant-input {
+  border-radius: 1rem !important;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+
+  &:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $primary-clr;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 3px rgba($primary-clr, 0.1);
+  }
+
+  &-focused {
+    box-shadow: 0 0 0 3px rgba($primary-clr, 0.3);
+    border-color: $primary-clr;
+  }
+}
+
+.ant-input,
+input[type="password"] {
+  font-size: 1.5rem !important;
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin-right: 1rem;
+
+  &:hover {
+    background-color: $primary-clr;
+    color: white;
+    transition: all 0.2s linear;
+  }
+}
+
+// Menu
+
+.ant-menu-vertical {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px !important;
+}
+
+.ant-menu {
+  transition: none !important;
+  background: $primary-clr;
+  border: none !important;
+
+  color: $accent-clr !important;
+
+  .anticon svg {
+    color: $accent-clr;
+  }
+
+  &-item a {
+    color: $accent-clr;
+
+    &:hover {
+      color: $accent-clr !important;
+    }
+  }
+
+  &-item .anticon {
+    color: $accent-clr !important;
+  }
+
+  &-light.ant-menu-inline .ant-menu-item,
+  .ant-menu-light > .ant-menu.ant-menu-inline .ant-menu-item {
+    padding: 1rem !important;
+  }
+
+  &-light .ant-menu-item a,
+  .ant-menu-light > .ant-menu .ant-menu-item a,
+  .ant-menu-light .ant-menu-item a:hover,
+  .ant-menu-light > .ant-menu .ant-menu-item a:hover {
+    color: $accent-clr;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &-light .ant-menu-item-group-title,
+  .ant-menu-light > .ant-menu .ant-menu-item-group-title {
+    color: $accent-clr;
+  }
+
+  &-item:hover,
+  &-item-active,
+  &:not(.ant-menu-inline) .ant-menu-submenu-open,
+  &-submenu-active,
+  &-submenu-title:hover,
+  &:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: none;
+
+    > span > a {
+      color: $secondary-clr !important;
+    }
+
+    span a:hover {
+      color: $primary-clr !important;
+    }
+
+    .anticon {
+      color: gray;
+    }
+
+    .anticon + span {
+      color: $accent-clr;
+    }
+
+    .ant-menu-submenu-arrow {
+      color: white;
+    }
+  }
+
+  &-item-group-title {
+    font-size: 1.1rem !important;
+  }
+
+  &-item-group-title,
+  &-submenu-selected {
+    font-weight: 500;
+  }
+}
+
+.ant-menu-light .ant-menu-item,
+.ant-menu-light > .ant-menu .ant-menu-item,
+.ant-menu-light .ant-menu-submenu-title,
+.ant-menu-light > .ant-menu .ant-menu-submenu-title {
+  color: $accent-clr !important;
+}
+
+.ant-menu-light.ant-menu-submenu-popup > .ant-menu,
+.ant-menu-light > .ant-menu.ant-menu-submenu-popup > .ant-menu {
+  background-color: $primary-clr;
+  color: $accent-clr;
+}
+
+.ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover,
+.ant-menu-light
+  > .ant-menu:not(.ant-menu-horizontal)
+  .ant-menu-submenu-title:hover {
+  background-color: $secondary-clr;
+  color: $accent-clr !important;
+}
+
+.ant-menu-submenu-open:hover {
+  background-color: $secondary-clr;
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.ant-menu .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: $primary-clr !important;
+}
+
+#rc-menu-uuid-09538-2-transactions-popup > li > span > a > span {
+  padding-left: 4rem;
+}
+
+// SWITCH
+
+.ant-switch .ant-switch-inner {
+  background: $primary-clr !important;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.ant-switch.ant-switch-checked .ant-switch-inner {
+  background: linear-gradient(
+    357deg,
+    rgb(42, 250, 223) 10%,
+    rgb(76, 131, 255) 100%
+  ) !important;
+}
+
+// SELECT
+// checkbox
+.ant-checkbox .ant-checkbox-inner {
+  background-color: $secondary-clr !important;
+  border-color: gray !important;
+  border-width: 2px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: $primary-clr !important;
+  border-color: $primary-clr !important;
+}
+
+.ant-checkbox .ant-checkbox-inner,
+.ant-checkbox-disabled .ant-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner {
+  width: 2rem;
+  height: 2rem;
+}
+
+// table
+.ant-table {
+  tr {
+    background: none !important;
+  }
+
+  td {
+    background: none !important;
+  }
+
+  .tr {
+    background: none !important;
+  }
+
+  .td {
+    background: none !important;
+  }
+}
+
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:first-child {
+  background: linear-gradient(
+    16deg,
+    rgb(171, 220, 255) 10%,
+    rgb(3, 150, 255) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-thead > tr > th:nth-child(2) {
+  background: linear-gradient(
+    357deg,
+    rgb(255, 211, 165) 10%,
+    rgb(253, 101, 133) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-thead > tr > th:nth-child(3) {
+  background: linear-gradient(
+    357deg,
+    rgb(42, 250, 223) 10%,
+    rgb(76, 131, 255) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  > *:last-child {
+  background: linear-gradient(
+    135deg,
+    rgb(238, 154, 229) 10%,
+    rgb(89, 97, 249) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-thead > tr > th:nth-child(4) {
+  background: linear-gradient(
+    357deg,
+    rgb(255, 211, 165) 10%,
+    rgb(253, 101, 133) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-thead > tr > th:nth-child(5) {
+  background: linear-gradient(
+    16deg,
+    rgb(171, 220, 255) 10%,
+    rgb(3, 150, 255) 100%
+  ) !important;
+  font-size: 1.6rem;
+}
+
+.ant-table-wrapper table {
+  background: #353e59;
+  color: #ffffff;
+}
+.ant-table-body {
+  min-height: 30rem;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr > th,
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  border-bottom: none;
+}
+
+span.anticon.anticon-caret-up.ant-table-column-sorter-up,
+span.anticon.anticon-caret-down.ant-table-column-sorter-down,
+span.ant-dropdown-trigger.ant-table-filter-trigger {
+  font-size: 1.6rem !important;
+  color: white !important;
+}
+
+.ant-table-head,
+.ant-table-cell {
+  text-align: center !important;
+}
+
+.ant-table-cell > .ant-form-item {
+  margin: 0 !important;
+}
+
+@for $i from 1 through 10 {
+  .ant-table-thead > tr > th:nth-child(#{$i}) {
+    background-color: #383a53 !important;
+    color: $accent-clr;
+  }
+}
+
+//Modal
+
+.ant-modal-root .ant-modal-wrap {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+
+  justify-content: center;
+  align-items: baseline;
+  margin-left: -22%;
+}
+
+.ant-modal .ant-modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding: 20px;
+  background: #1d2231;
+  overflow: scroll;
+}
+
+.ant-modal .ant-modal-header {
+  background: none;
+}
+
+.ant-modal .ant-modal-title {
+  background: linear-gradient(
+    135deg,
+    rgb(238, 154, 229) 10%,
+    rgb(89, 97, 249) 100%
+  ) !important;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+
+// Button
+
+.ant-btn-variant-outlined,
+.ant-btn-variant-dashed {
+  background: linear-gradient(
+    135deg,
+    rgb(238, 154, 229) 10%,
+    rgb(89, 97, 249) 100%
+  ) !important;
+  color: white;
+  border: none;
+}
