@@ -1,72 +1,48 @@
-A lightweight React + TypeScript dashboard for managing users. You can add new users, validate input, and view them in a dynamic user table powered by global state via React Context.
+# 🧭 NEC User Dashboard
 
-Built with: React 18, TypeScript, Vite, Mantine, Ant Design, React Router, MobX, Vitest.
+A lightweight React + TypeScript dashboard for managing users.  
+You can **add new users**, validate input, and **view them in a user table** powered by global state via React Context.
 
-🚀 Features
-➕ Add User
+Built with: **React 18**, **TypeScript**, **Vite**, **Mantine**, **Ant Design**, **React Router**, **MobX**, and **Vitest**.
 
-A validated form that collects:
+---
 
-Full Name
+## 🚀 Features
 
-Age (numeric validation + age restriction)
+### ➕ Add User
+A fully validated form that collects:
+- Full Name  
+- Age (with numeric validation + age restriction)  
+- Country dropdown  
+- Interests (checkbox group)
 
-Country dropdown
+Additional behaviour:
+- Success notification on submit  
+- Form reset  
+- Navigation to the User List page  
+- Global storage via a `UsersContext` using auto-generated IDs  
 
-Interests (checkbox group)
+### 📋 User List
+A dynamic, responsive table that displays all created users.
 
-Includes success notifications and automatic navigation to the User List.
+Features:
+- Active/Inactive toggle  
+- “View User” modal  
+- Clean, minimal UI using Ant Design Table  
 
-📋 User List
+### 🎨 UI / UX Enhancements
+- Smooth animated route transitions via **Framer Motion**
+- Wrapped in **MantineProvider** for consistent theming
+- Reusable container, layout, sidebar, and header components
 
-A table that displays all users in global state, including an Active toggle and a View modal.
+---
 
-🎨 UI / UX
+## 🛠️ Installation
 
-Smooth page transitions using Framer Motion, clean layout with a header + sidebar, Mantine styling, and Ant Design components.
-
-📂 Project Structure
-src/
-├── Components/
-│   ├── dashboard/
-│   ├── common/
-│   └── stores/
-│       └── UsersContext.tsx
-├── routes/
-├── tests/
-└── Dashboard.tsx
-
-🛠️ Installation
-git clone https://github.com/QasHussain/nec-user-dashboard.git
-cd nec-user-dashboard
-npm install
-
-▶️ Run the Application
-npm run dev
+Clone the repo:
 
 
-App will run at:
-
-http://localhost:5173/
-
-🧪 Run Tests
-npm run test
-
-
-Uses Vitest + React Testing Library.
-
-🧱 Tech Summary
-
-State: React Context (UsersContext)
-
-Forms: Mantine useForm
-
-UI: Mantine + Ant Design
-
-Routing: React Router v6
-
-Build: Vite
-
-Animations: Framer Motion
-
-Testing: Vitest + RTL
+- git clone https://github.com/QasHussain/nec-user-dashboard.git
+- cd nec-user-dashboard
+- yarn install
+- yarn dev
