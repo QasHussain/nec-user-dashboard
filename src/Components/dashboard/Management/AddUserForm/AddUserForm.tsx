@@ -82,7 +82,7 @@ const AddUserForm = () => {
     form.reset();
 
     setTimeout(() => {
-      navigate(RoutePathsConfig.userList);
+      navigate(`/dashboard/${RoutePathsConfig.userList}`);
     }, 650);
   };
 
