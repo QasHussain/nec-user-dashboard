@@ -5,7 +5,6 @@ You can **add new users**, validate input, and **view them in a user table** pow
 
 Built with: **React 18**, **TypeScript**, **Vite**, **Mantine**, **Ant Design**, **React Router**, **MobX**, and **Vitest**.
 
----
 
 ## 🚀 Features
 
@@ -35,7 +34,6 @@ Features:
 - Wrapped in **MantineProvider** for consistent theming
 - Reusable container, layout, sidebar, and header components
 
----
 
 ## 🛠️ Installation
 
